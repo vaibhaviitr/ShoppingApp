@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cc">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:theme="@style/AppTheme"
+        android:id = "@+id/relativelayouttop">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/button"
+            android:id="@+id/menubutton"
+            android:theme="@style/AppTheme"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SHOWCASE MENU"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/menubutton"
+            android:layout_alignBottom="@+id/menubutton"
+            android:layout_alignTop="@+id/menubutton"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:theme="@style/AppTheme"
+            android:id="@+id/hometextbutton"/>
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:theme="@style/AppTheme"
+            android:background="@mipmap/search"
+            android:id="@+id/searctbutton"/>
+    </RelativeLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_below="@+id/relativelayouttop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/silver"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/cart"
+            android:layout_margin="10dp"
+            android:id="@+id/cart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cart"
+            android:id="@+id/orderprice"
+            android:text="Total: Rs 0"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:text="Checkout"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

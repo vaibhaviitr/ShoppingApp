@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:theme="@style/AppTheme">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/arrowback"
+            android:id="@+id/menubutton"
+            android:theme="@style/AppTheme"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Checkout"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/menubutton"
+            android:layout_alignBottom="@+id/menubutton"
+            android:layout_alignTop="@+id/menubutton"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:theme="@style/AppTheme"
+            android:id="@+id/hometextbutton"/>
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentRight="true"
+            android:theme="@style/AppTheme"
+            android:background="@drawable/vertback"
+            android:id="@+id/vertback"/>
+   </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="100"
+        android:layout_marginTop="68dp"
+        android:id="@+id/addDiscription">
+
+        <LinearLayout
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:text="Shipping Address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="The Address product will be"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="shipped to"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="60"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cart"
+            android:id="@+id/rtt"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_below = "@+id/addDiscription">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+

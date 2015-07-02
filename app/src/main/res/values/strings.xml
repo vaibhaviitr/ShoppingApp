@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="counting">your counting is 0</string>
+    <string name="add">Add One</string>
+    <string name="subtract">Subtract One</string>
+
+    <string name="shopAdd"><b>Shopping Address</b></string>
+    <string name="shopAddRef">The Address product will be shipped to</string>
+    <string name="deliver"><b>DELIVER HERE</b></string>
+</resources>
