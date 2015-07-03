@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:id = "@+id/lol">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:theme="@style/AppTheme"
+        android:id = "@+id/relativelayouttop">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/button"
+            android:id="@+id/menubutton"
+            android:theme="@style/AppTheme"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="HOME"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/menubutton"
+            android:layout_alignBottom="@+id/menubutton"
+            android:layout_alignTop="@+id/menubutton"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:theme="@style/AppTheme"
+            android:id="@+id/hometextbutton"/>
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:theme="@style/AppTheme"
+            android:background="@mipmap/search"
+            android:id="@+id/searctbutton"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/frameanimation">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/AppTheme"
+            android:background="@mipmap/shirt"
+            android:backgroundTintMode="src_over"
+            android:id = "@+id/relativelayoutmiddle">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:id="@+id/linearlayoutmiddle">
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/scrolldown">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@mipmap/clothes"
+            android:id = "@+id/chutiyapa"/>
+    </ScrollView>
+
+</LinearLayout>

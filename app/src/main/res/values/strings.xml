@@ -10,4 +10,5 @@
     <string name="shopAdd"><b>Shopping Address</b></string>
     <string name="shopAddRef">The Address product will be shipped to</string>
     <string name="deliver"><b>DELIVER HERE</b></string>
+    <string name="forgot">forget password?</string>
 </resources>

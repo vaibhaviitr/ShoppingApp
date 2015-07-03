@@ -6,28 +6,28 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"  >
-    <activity android:name=".Splash" android:label="@string/app_name">
-         <intent-filter>
-             <action android:name="android.intent.action.MAIN"></action>
-             <category android:name="android.intent.category.LAUNCHER"></category>
-         </intent-filter>
-    </activity>
-    <activity android:name=".startingPoint" android:label="@string/app_name">
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="com.example.vaibhav.myapplication.STARTINGPOINT"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-            </intent-filter>
-    </activity>
-        <activity android:name=".Menu" android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="com.example.vaibhav.myapplication.STARTINGPOINT"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-            </intent-filter>
-        </activity>
-        <activity android:name=".TextPlay" android:label="@string/app_name">
-        </activity>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Notifications"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
